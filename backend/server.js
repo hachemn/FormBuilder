@@ -3,7 +3,7 @@ const notes = require("./data/notes");
 const app = express();
 const dotenv = require("dotenv");
 
-dotenv.config({ path: __dirname + "/../.env" });
+dotenv.config({ path: __dirname + "/.env" });
 console.log("MONGO_URI:", process.env.MONGO_URI);
 
 const connectDB = require("./config/db");
