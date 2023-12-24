@@ -9,7 +9,7 @@ function App() {
     fetch("/api/notes")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data); // Add this line
+        console.log(data);
         setNotes(data);
       })
       .catch((error) => console.error("Error fetching notes:", error));
@@ -112,7 +112,7 @@ function App() {
           )}
         </Droppable>
       </DragDropContext>
-      <h2>Notes from Backend:</h2>
+      <h2>test from Backend:</h2>
       <ul>
         {Array.isArray(notes) &&
           notes.map((note) => <li key={note._id}>{note.nom}</li>)}
