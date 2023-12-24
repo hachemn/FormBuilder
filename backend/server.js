@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/notes", (req, res) => {
-  console.log(notes); // Add this line
+  console.log(notes);
   res.json(notes);
 });
 
